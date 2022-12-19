@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -15,12 +19,35 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: 'burtons';
+  src: url('../public/Burtons.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../public/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../public/Montserrat-Bold.ttf');
+}
+
+.font-montserratSemi {
+  font-family: 'Montserrat-SemiBold';
+}
+
+.custom-filter {
+  backdrop-filter: blur(4px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }

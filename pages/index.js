@@ -165,7 +165,7 @@ export default function Home() {
                 onClick={() => setShowModal11(true)}
               >
                 <Image
-                  alt="Demo 4 landing page"
+                  alt="Demo4 landing page"
                   src={mock4}
                   id="mock4"
                   className="rounded-lg object-cover shadow-lg"

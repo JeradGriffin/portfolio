@@ -8,6 +8,11 @@ import founders from "../public/founders.jpg";
 import gocanvas from "../public/GoCanvas.jpg";
 import kraft from "../public/kraft.jpg";
 import kraftMobile from "../public/khc_mb.jpg";
+import mock1 from "../public/Mockup_1.jpg";
+import mock1mobile from "../public/Mockup_1_Mobile.jpg";
+import mock2C from "../public/Mockup_2_Contemporary.jpg";
+import mock2R from "../public/Mockup_2_Responsive.jpg";
+import mock4 from "../public/Mockup_4.jpg";
 import pacden from "../public/pacden.jpg";
 import palo from "../public/palo.jpg";
 import usps from "../public/usps.jpg";
@@ -29,8 +34,14 @@ export default function Home() {
   const [showModal6, setShowModal6] = useState(false);
   const [showModal7, setShowModal7] = useState(false);
   const [showModal8, setShowModal8] = useState(false);
+  const [showModal9, setShowModal9] = useState(false);
+  const [showModal9b, setShowModal9b] = useState(false);
+  const [showModal10, setShowModal10] = useState(false);
+  const [showModal10B, setShowModal10B] = useState(false);
+  const [showModal11, setShowModal11] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isHoveringK, setIsHoveringK] = useState(false);
+  const [isHoveringM1, setIsHoveringM1] = useState(false);
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -47,6 +58,13 @@ export default function Home() {
   const handleMouseOutK = () => {
     setIsHoveringK(false);
   };
+  const handleMouseOverM1 = () => {
+    setIsHoveringM1(true);
+  };
+
+  const handleMouseOutM1 = () => {
+    setIsHoveringM1(false);
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -60,7 +78,7 @@ export default function Home() {
         <Fragment>
           <section className="px-10">
             <nav className=" py-10 mb-12 flex justify-between">
-              <h1 className=" text-xl font-burtons dark:text-white"></h1>
+              <h1 className=" text-xl dark:text-white"></h1>
               <ul className=" flex items-center">
                 <li>
                   <GiMoonOrbit
@@ -107,6 +125,56 @@ export default function Home() {
               className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"
               id="portfolio-container"
             >
+              {/* Mockup 1 */}
+              <div
+                id="mock1"
+                className=" basis-1/3 flex-1 shadow-lg cursor-pointer relative"
+                onMouseOver={handleMouseOverM1}
+                onMouseOut={handleMouseOutM1}
+              >
+                <Image
+                  alt="Demo 1 landing page"
+                  src={mock1}
+                  className="rounded-lg object-cover shadow-lg"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+
+                {isHoveringM1 ? (
+                  <div className=" transition ease-in-out delay-150 w-full h-full mx-auto shadow-xl absolute top-0 flex justify-center items-center bg-opacity-25 backdrop-blur-sm">
+                    <button
+                      className=" bg-white text-slate-800 text-lg font-medium transition duration-1000 ease-out h-2 p-7 m-7 rounded-xl flex justify-center items-center shadow-lg"
+                      onClick={() => setShowModal9(true)}
+                    >
+                      Desktop View
+                    </button>
+                    <button
+                      className=" bg-white text-slate-800 text-lg font-medium h-2 p-7 m-7 rounded-xl flex justify-center items-center shadow-lg"
+                      onClick={() => setShowModal9b(true)}
+                    >
+                      Mobile View
+                    </button>
+                  </div>
+                ) : null}
+              </div>
+
+              <div
+                id="mock4"
+                className=" basis-1/3 flex-1 shadow-lg cursor-pointer relative"
+                onClick={() => setShowModal11(true)}
+              >
+                <Image
+                  alt="Demo 4 landing page"
+                  src={mock4}
+                  id="mock4"
+                  className="rounded-lg object-cover shadow-lg"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
               <div
                 id="chubb"
                 className=" basis-1/3 flex-1 shadow-lg cursor-pointer relative"
@@ -138,6 +206,38 @@ export default function Home() {
                     </button>
                   </div>
                 ) : null}
+              </div>
+
+              <div
+                id="mock2C"
+                className=" basis-1/3 flex-1 shadow-lg cursor-pointer relative"
+                onClick={() => setShowModal10(true)}
+              >
+                <Image
+                  alt="Demo 2 landing page"
+                  src={mock2C}
+                  id="mock2C"
+                  className="rounded-lg object-cover shadow-lg"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                id="mock2R"
+                className=" basis-1/3 flex-1 shadow-lg cursor-pointer relative"
+                onClick={() => setShowModal10B(true)}
+              >
+                <Image
+                  alt="Mockup 2R landing page"
+                  src={mock2R}
+                  id="mock2R"
+                  className="rounded-lg object-cover shadow-lg"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
               </div>
 
               <div
@@ -272,6 +372,21 @@ export default function Home() {
             </div>
           </section>
 
+          <Modal isVisible={showModal9} onClose={() => setShowModal9(false)}>
+            <Image alt=" " src={mock1} />
+          </Modal>
+          <ModalMobile
+            isVisible={showModal9b}
+            onClose={() => setShowModal9b(false)}
+          >
+            <Image
+              alt=" "
+              className=" "
+              src={mock1mobile}
+              objectFit="contain"
+            />
+          </ModalMobile>
+
           <Modal isVisible={showModal1} onClose={() => setShowModal1(false)}>
             <Image alt=" " src={chubb} />
           </Modal>
@@ -312,6 +427,18 @@ export default function Home() {
           </Modal>
           <Modal isVisible={showModal8} onClose={() => setShowModal8(false)}>
             <Image alt=" " src={gocanvas} />
+          </Modal>
+          <Modal isVisible={showModal10} onClose={() => setShowModal10(false)}>
+            <Image alt=" " src={mock2C} />
+          </Modal>
+          <Modal
+            isVisible={showModal10B}
+            onClose={() => setShowModal10B(false)}
+          >
+            <Image alt=" " src={mock2R} />
+          </Modal>
+          <Modal isVisible={showModal11} onClose={() => setShowModal11(false)}>
+            <Image alt=" " src={mock4} />
           </Modal>
         </Fragment>
       </main>

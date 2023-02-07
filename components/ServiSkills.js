@@ -12,7 +12,7 @@ function ServiSkills() {
         </h3>
 
         <p className="text-md py-2 leading-8 text-slate-800 dark:text-gray-400 font-montserrat">
-          Self taught designer and developer. I&apos;ve done remote work for
+          Self taught designer and developer. I&apos;ve done contract work for
           <span className="text-slate-800 dark:text-gray-400 ">
             {" "}
             companies{" "}

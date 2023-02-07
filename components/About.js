@@ -15,8 +15,8 @@ function About() {
           Designer and Developer.
         </h3>
         <p className="text-md py-5 leading-8 text-gray-800 max-w-xl mx-auto md:text-xl dark:text-gray-400 font-montserrat">
-          Freelancer providing services for front end web development and
-          designing needs.
+          Freelancer providing services for UX designing and front end web
+          development needs.
         </p>
         <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:mb-20">
           <a

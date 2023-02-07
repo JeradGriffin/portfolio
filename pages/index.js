@@ -4,7 +4,7 @@ import { GiMoonOrbit } from "react-icons/gi";
 import chubb from "../public/chubb.jpg";
 import coke from "../public/coke.jpg";
 import chubbMobile from "../public/chubb_mb.jpg";
-import founders from "../public/founders.jpg";
+import founders from "../public/foundersnew.jpg";
 import gocanvas from "../public/GoCanvas.jpg";
 import kraft from "../public/kraft.jpg";
 import kraftMobile from "../public/khc_mb.jpg";

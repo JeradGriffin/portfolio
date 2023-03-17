@@ -10,7 +10,7 @@ import kraft from "../public/kraft.jpg";
 import kraftMobile from "../public/khc_mb.jpg";
 import mock1 from "../public/Mockup_1.jpg";
 import mock1mobile from "../public/Mockup_1_Mobile.jpg";
-import mock2C from "../public/Mockup_2_Contemporary.jpg";
+import mock2C from "../public/Mockup_3_Searchbar.jpg";
 import mock2R from "../public/Mockup_2_Responsive.jpg";
 import mock4 from "../public/Mockup_4.jpg";
 import pacden from "../public/pacden.jpg";

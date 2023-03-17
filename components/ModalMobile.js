@@ -13,7 +13,7 @@ export const ModalMobile = ({ isVisible, onClose, children }, props) => {
       id="wrapper"
       onClick={handleClose}
     >
-      <div className=" max-[500px]:w-[300px] sm:w-[300px] md:w-[300px] lg:w-[300px] flex flex-col">
+      <div className=" max-[500px]:w-[300px] sm:w-[300px] md:w-[300px] lg:w-[400px] flex flex-col">
         <button
           className=" text-white text-xl place-self-end"
           onClick={() => onClose()}

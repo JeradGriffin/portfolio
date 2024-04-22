@@ -7,7 +7,7 @@ function ServiSkills() {
   return (
     <div>
       <div>
-        <h3 className="text-3xl py-1 text-gray-600 dark:text-gray-400 font-montserratSemi font-medium">
+        <h3 className="text-2xl py-1 text-gray-600 dark:text-gray-400 font-montserratSemi font-medium">
           About Me
         </h3>
 

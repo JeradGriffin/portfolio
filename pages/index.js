@@ -111,7 +111,7 @@ export default function Home() {
             <div>
               <h3
                 id="port_h3"
-                className="text-3xl py-1 text-gray-600 dark:text-gray-400 font-montserratSemi font-medium"
+                className="text-2xl py-1 text-gray-600 dark:text-gray-400 font-montserratSemi font-medium"
               >
                 Portfolio
               </h3>

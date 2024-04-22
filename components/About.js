@@ -8,12 +8,12 @@ function About() {
   return (
     <div className=" text-center lg:p-10 lg:pb-0 w-100 h-100 flex flex-wrap justify-center items-start">
       <div>
-        <h2 className=" text-5xl py-2 text-teal-600 font-medium md:text-6xl font-montserratB">
+        <h1 className=" text-5xl py-2 text-teal-600 font-medium md:text-6xl font-montserratB">
           Jerad Griffin
-        </h2>
-        <h3 className=" text-2xl py-2 md:text-3xl text-gray-600 dark:text-white font-montserratSemi">
+        </h1>
+        <h2 className=" text-3xl py-2 md:text-3xl text-gray-600 dark:text-white font-montserratSemi">
           Designer and Developer.
-        </h3>
+        </h2>
         <p className="text-md py-5 leading-8 text-gray-800 max-w-xl mx-auto md:text-xl dark:text-gray-400 font-montserrat">
           Freelancer providing services for UX designing and front end web
           development needs.

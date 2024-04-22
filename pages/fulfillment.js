@@ -139,7 +139,7 @@ function Fulfillment() {
                 <h3>Contact Us &amp; Customer Service Contact Details</h3>
 
                 <p>
-                    For enquiries or comments regarding this Policy, customers may email <a href="mailto:jerad.griffin@gmail.com">jerad.griffin@gmail.com</a>
+                    For enquiries or comments regarding this Policy, customers may email <a href="mailto:griffindesdev@gmail.com">griffindesdev@gmail.com</a>
                 </p>
             </article>
         </div>

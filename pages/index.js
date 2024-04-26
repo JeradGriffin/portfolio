@@ -21,6 +21,7 @@ import { Modal } from "../components/Modal";
 import { ModalMobile } from "../components/ModalMobile";
 import About from "../components/About";
 import ServiSkills from "../components/ServiSkills";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -370,7 +371,9 @@ export default function Home() {
                 />
               </div>
             </div>
-            <a href="/fulfillment" className="fulfillment">Fulfillment Policy</a>
+            <Link href="/fulfillment" className="fulfillment">
+              Fulfillment Policy
+            </Link>
           </section>
 
           <Modal isVisible={showModal9} onClose={() => setShowModal9(false)}>

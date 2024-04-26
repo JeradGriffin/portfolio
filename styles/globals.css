@@ -39,6 +39,10 @@ a {
   src: url('../public/Montserrat-Bold.ttf');
 }
 
+section {
+  padding-block-end: 40px;
+}
+
 .font-montserratSemi {
   font-family: 'Montserrat-SemiBold';
 }
@@ -85,4 +89,8 @@ a {
   a {
     font-weight: bold;
   }
+}
+
+.fulfillment {
+  font-weight: bold;
 }

@@ -370,6 +370,7 @@ export default function Home() {
                 />
               </div>
             </div>
+            <a href="/fulfillment" className="fulfillment">Fulfillment Policy</a>
           </section>
 
           <Modal isVisible={showModal9} onClose={() => setShowModal9(false)}>

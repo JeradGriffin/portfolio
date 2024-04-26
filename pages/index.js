@@ -371,8 +371,8 @@ export default function Home() {
                 />
               </div>
             </div>
-            <Link href="/fulfillment" className="fulfillment">
-              Fulfillment Policy
+            <Link href="/fulfillment">
+              <a className="fulfillment">Fulfillment Policy</a>
             </Link>
           </section>
 
